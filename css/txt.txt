@@ -1,0 +1,11 @@
+#000f3d 
+
+#001248  #343a40
+
+.text-primary {
+    color: #e63946 !important
+}
+
+.text-secondary {
+    color: #e63946 !important
+}

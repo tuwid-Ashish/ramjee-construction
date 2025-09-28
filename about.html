@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ramjee Concretes private limited</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Additional CSS for navbar visibility -->
+    <style>
+        /* Enhanced navbar styles for better visibility */
+        .navbar-glass {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Navbar when scrolled - solid background for visibility */
+        .navbar-scrolled {
+            background: rgba(33, 37, 41, 0.95) !important;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ensure text is always visible */
+        .navbar-glass .navbar-nav .nav-link,
+        .navbar-glass .navbar-brand {
+            color: white !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Dropdown menu styling */
+        .glass-dropdown {
+            background: rgba(33, 37, 41, 0.95) !important;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-dropdown-item {
+            color: white !important;
+        }
+
+        .glass-dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white !important;
+        }
+
+        /* Logo styling */
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .brand-text {
+            font-weight: 600;
+            font-size: 1.1rem;
+            line-height: 1.2;
+        }
+
+        /* Fixed navbar positioning */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+            width: 100%;
+        }
+
+        /* Adjust body padding to account for fixed navbar */
+        body {
+            padding-top: 76px;
+            /* Adjust based on your navbar height */
+        }
+
+        /* Page hero adjustments */
+        .page-hero {
+            margin-top: -76px;
+            /* Negative margin to overlap with navbar */
+            padding-top: 150px;
+            /* Add padding to compensate */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-glass pb-2 px-4" id="mainNavbar">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center p-0">
+                <img src="img/logo-Ramjee.png" alt="Ramjee Logo" class="logo-img me-2">
+                <span class="brand-text">Ramjee Concretes <br class="d-none d-lg-block"> Pvt. Ltd</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false">
+                <span class="fa fa-bars text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="project.html" class="nav-item nav-link">Projects</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Products</a>
+                        <div class="dropdown-menu glass-dropdown m-lg-0">
+                            <a href="Ready-Mix.html" class="dropdown-item glass-dropdown-item">Ready Mix Concrete</a>
+                            <a href="Fibre-Concrete.html" class="dropdown-item glass-dropdown-item">Fibre Concrete</a>
+                            <a href="Stamped-Concrete.html" class="dropdown-item glass-dropdown-item">Stamped
+                                Concrete</a>
+                            <a href="Foam-Concrete.html" class="dropdown-item glass-dropdown-item">Foam Concrete</a>
+                            <a href="Self-Compact-Concrete.html" class="dropdown-item glass-dropdown-item">Self Compact
+                                Concrete (SCC)</a>
+                            <a href="Fly-ash-Concrete-Bricks.html" class="dropdown-item glass-dropdown-item">Fly ash
+                                Concrete Bricks</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Start -->
+    <section class="page-hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white mb-3 animate__animated animate__fadeInDown">
+                About Us
+            </h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb breadcrumb-modern animate__animated animate__fadeInUp">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Page Hero End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="about-item-image d-flex">
+                        <img src="img/about.jpg" class="img-1 img-fluid w-50" alt="">
+                        <img src="img/about-3.jpg" class="img-2 img-fluid w-50" alt="">
+                        <div class="about-item-image-content">
+                            <img src="img/about-1.png" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="about-item-content">
+                        <p class="text-uppercase text-secondary fs-5 mb-0">WE ARE CONSTRUCTION COMPANY</p>
+                        <h2 class="display-4 text-capitalize mb-3">Bringing Vision to Life with Every Structure.</h2>
+                        <p class="mb-4 fs-5">Ramjee Concretes Pvt. Ltd. is dedicated to transforming ideas into reality
+                            through cutting-edge construction solutions, premium quality, and a commitment to
+                            sustainability. Established in 2012, our company serves Punjab, Himachal Pradesh, Rajasthan,
+                            and Haryana—delivering high-efficiency, cost-effective building materials for projects large
+                            and small</p>
+                        <div class="pb-4 mb-4 border-bottom">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="about-item-content-img">
+                                        <img src="img/about-2.jpg" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex mb-4">
+                                        <div class="text-secondary">
+                                            <i class="fas fa-user-shield fa-3x"></i>
+                                        </div>
+                                        <h4 class="ms-3">Building quality standards</h4>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="text-secondary">
+                                            <i class="fas fa-users-cog fa-3x"></i>
+                                        </div>
+                                        <h4 class="ms-3">Certified engineer’s team</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-0 gx-4 justify-content-between pb-4">
+                            <div class="col-lg-6">
+                                <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> 100% Satisfaction
+                                </p>
+                                <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Trained Emploies
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Annual Pass
+                                    Programs</p>
+                                <p class="text-dark mb-0"><i class="fas fa-check text-secondary me-1"></i> Flexible and
+                                    cost effective</p>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-secondary d-inline-block py-3 px-5 me-2 flex-shrink-0 wow fadeInUp"
+                            data-wow-delay="0.1s" href="#">Discover More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+<!-- Features Start -->
+<div class="container-fluid feature bg-light py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <p class="text-uppercase text-secondary fs-5 mb-0">WHY US</p>
+            <h2 class="display-4 text-capitalize mb-3">Why Choose Ramjee Concretes</h2>
+            <p class="text-muted">Where Integrity Strengthens Technology - Building excellence through innovation and sustainability</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Quality Assurance -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="feature-item text-center border-0 p-5 bg-white rounded shadow-sm h-100">
+                    <div class="feature-img bg-primary bg-gradient d-inline-flex p-4 rounded-circle mb-4">
+                        <i class="fas fa-flask text-white fa-3x"></i>
+                    </div>
+                    <h4 class="text-primary mb-3">Quality Control Laboratory</h4>
+                    <p class="mb-4">Well-equipped quality control laboratory ensures every batch meets international standards. Each product is tested for strength, durability, and compliance before delivery.</p>
+                    <div class="feature-highlights">
+                        <small class="text-muted">
+                            <i class="fas fa-check text-success me-2"></i>ISI Compliant Products<br>
+                            <i class="fas fa-check text-success me-2"></i>International Quality Standards<br>
+                            <i class="fas fa-check text-success me-2"></i>Rigorous Testing Protocols
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Technology -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="feature-item text-center border-0 p-5 bg-white rounded shadow-sm h-100">
+                    <div class="feature-img bg-success bg-gradient d-inline-flex p-4 rounded-circle mb-4">
+                        <i class="fas fa-cogs text-white fa-3x"></i>
+                    </div>
+                    <h4 class="text-success mb-3">State-of-Art Technology</h4>
+                    <p class="mb-4">Automated batching plant with US technology ensures precise mixing and consistent quality. 12 transit mixers with 7 cubic meter capacity each for timely delivery.</p>
+                    <div class="feature-highlights">
+                        <small class="text-muted">
+                            <i class="fas fa-check text-success me-2"></i>Automated Batching Plant<br>
+                            <i class="fas fa-check text-success me-2"></i>12 Transit Mixers (84m³ Total)<br>
+                            <i class="fas fa-check text-success me-2"></i>2 Concrete Pumps Available
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eco-Friendly -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="feature-item text-center border-0 p-5 bg-white rounded shadow-sm h-100">
+                    <div class="feature-img bg-warning bg-gradient d-inline-flex p-4 rounded-circle mb-4">
+                        <i class="fas fa-leaf text-white fa-3x"></i>
+                    </div>
+                    <h4 class="text-warning mb-3">Green Building Solutions</h4>
+                    <p class="mb-4">Proud member of Indian Green Building Council. Our eco-friendly materials and sustainable manufacturing processes contribute to green construction initiatives.</p>
+                    <div class="feature-highlights">
+                        <small class="text-muted">
+                            <i class="fas fa-check text-success me-2"></i>IGBC Member Company<br>
+                            <i class="fas fa-check text-success me-2"></i>Sustainable Manufacturing<br>
+                            <i class="fas fa-check text-success me-2"></i>Fly Ash Utilization
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proven Track Record -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="feature-item text-center border-0 p-5 bg-white rounded shadow-sm h-100">
+                    <div class="feature-img bg-secondary bg-gradient d-inline-flex p-4 rounded-circle mb-4">
+                        <i class="fas fa-trophy text-white fa-3x"></i>
+                    </div>
+                    <h4 class="text-secondary mb-3">Trusted by Leaders</h4>
+                    <p class="mb-4">13+ years of excellence serving 100+ projects including prestigious clients like TDI City, Chitkara University, Plaksha University, and Omaxe Infra.</p>
+                    <div class="feature-highlights">
+                        <small class="text-muted">
+                            <i class="fas fa-check text-success me-2"></i>100+ Completed Projects<br>
+                            <i class="fas fa-check text-success me-2"></i>Prestigious Client Base<br>
+                            <i class="fas fa-check text-success me-2"></i>13 Years Experience
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+    <!-- Fact Counter Modern -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Our Achievements in Numbers</h2>
+                <p class="text-muted fs-5">Building Punjab's future with strength, sustainability, and innovation since
+                    2012</p>
+            </div>
+
+            <div class="row g-4 text-center">
+                <!-- Projects Completed -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-building fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-primary fw-bold mb-2" data-toggle="counter-up">100</h2>
+                        <p class="text-muted mb-2 fw-semibold">Plus Projects</p>
+                        <small class="text-muted">Across Residential, Educational & Commercial Sectors</small>
+                    </div>
+                </div>
+
+                <!-- Transit Mixers -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-truck fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-success fw-bold mb-2" data-toggle="counter-up">12</h2>
+                        <p class="text-muted mb-2 fw-semibold">Transit Mixers</p>
+                        <small class="text-muted">7 Cubic Meters Capacity Each | 84m³ Total</small>
+                    </div>
+                </div>
+
+                <!-- Years of Experience -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-warning text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-calendar-alt fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-warning fw-bold mb-2" data-toggle="counter-up">13</h2>
+                        <p class="text-muted mb-2 fw-semibold">Years Experience</p>
+                        <small class="text-muted">Established in 2012 | Continuous Growth</small>
+                    </div>
+                </div>
+
+                <!-- Production Capacity -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-info text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-industry fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-info fw-bold mb-2" data-toggle="counter-up">35000</h2>
+                        <p class="text-muted mb-2 fw-semibold">Bricks Per Day</p>
+                        <small class="text-muted">High-Tech Production Unit | 3 Acres Facility</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Stats Row -->
+            <div class="row g-4 text-center mt-4">
+                <!-- Concrete Pumps -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-pump-soap fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-danger fw-bold mb-2" data-toggle="counter-up">2</h2>
+                        <p class="text-muted mb-2 fw-semibold">Concrete Pumps</p>
+                        <small class="text-muted">For Efficient Concrete Placement</small>
+                    </div>
+                </div>
+
+                <!-- Crushing Capacity -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-hammer fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-secondary fw-bold mb-2" data-toggle="counter-up">200</h2>
+                        <p class="text-muted mb-2 fw-semibold">Tonnes Per Hour</p>
+                        <small class="text-muted">Crusher Capacity Each Unit</small>
+                    </div>
+                </div>
+
+                <!-- Manufacturing Units -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-primary fw-bold mb-2" data-toggle="counter-up">2</h2>
+                        <p class="text-muted mb-2 fw-semibold">Manufacturing Units</p>
+                        <small class="text-muted">Mohali & Ludhiana | Strategic Locations</small>
+                    </div>
+                </div>
+
+                <!-- Green Building Member -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="fact-card p-4 shadow-sm h-100 border-0 rounded-lg bg-white">
+                        <div class="fact-icon mb-3 mx-auto">
+                            <div class="icon-wrapper bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 80px; height: 80px; margin: 0 auto;">
+                                <i class="fas fa-leaf fa-2x"></i>
+                            </div>
+                        </div>
+                        <h2 class="counter-number text-success fw-bold mb-2" data-toggle="counter-up">100</h2>
+                        <p class="text-muted mb-2 fw-semibold">Percent Eco-Friendly</p>
+                        <small class="text-muted">Indian Green Building Council Member</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Counter Modern -->
+
+    <!-- Clients Section Start -->
+    <section class="py-5 bg-light" id="clients">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Our Trusted Clients</h2>
+                <p class="text-muted fs-5 mb-4">
+                    Proud partners in building Punjab's landmark projects across residential, educational, and
+                    commercial sectors
+                </p>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="bg-primary px-4 py-2 rounded-pill text-white">
+                        <i class="fas fa-trophy me-2"></i><strong>100+ Projects Completed</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate Clients -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h4 class="text-primary mb-2">
+                        <i class="fas fa-building me-2"></i>Leading Real Estate Developers
+                    </h4>
+                    <p class="text-muted">Trusted by top residential and commercial project developers</p>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <!-- TDI City -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/tdi-city-logo.png" class="img-fluid" alt="TDI City Mohali"
+                                    title="TDI City Mohali">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">TDI City Mohali</h6>
+                                <small class="text-muted">Residential Township</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Omega City -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/omega-city-logo.png" class="img-fluid"
+                                    alt="Omega City Mohali" title="Omega City Mohali">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Omega City Mohali</h6>
+                                <small class="text-muted">Premium Housing</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ansal API -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/ansalapi.png" class="img-fluid" alt="Ansal API Mohali"
+                                    title="Ansal API Mohali">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Ansal API</h6>
+                                <small class="text-muted">Real Estate Giant</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Omaxe -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/Omaxe-Logo.jpg" class="img-fluid" alt="Omaxe Infra New CHD"
+                                    title="Omaxe Infra New CHD">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Omaxe Infra</h6>
+                                <small class="text-muted">Infrastructure Leader</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mona City -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/monatownships.png" class="img-fluid"
+                                    alt="Mona City Township" title="Mona City Township">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Mona City Township</h6>
+                                <small class="text-muted">Integrated Development</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bansal Infra -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/bansal-company.png" class="img-fluid"
+                                    alt="Bansal Infra Pvt Ltd" title="Bansal Infra Pvt Ltd">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Bansal Infra</h6>
+                                <small class="text-muted">Construction Excellence</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Institutions -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h4 class="text-success mb-2">
+                        <i class="fas fa-university me-2"></i>Prestigious Educational Institutions
+                    </h4>
+                    <p class="text-muted">Building knowledge centers across Punjab</p>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <!-- Chitkara University -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/Chitkara University.png" class="img-fluid"
+                                    alt="Chitkara University Rajpura" title="Chitkara University Rajpura">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Chitkara University</h6>
+                                <small class="text-muted">Rajpura Campus</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Plaksha University -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo">
+                                <img src="img/trusted-client/plaksha-university-logo.png" class="img-fluid"
+                                    alt="Plaksha University Mohali" title="Plaksha University Mohali">
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">Plaksha University</h6>
+                                <small class="text-muted">Engineering Excellence</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commercial Projects -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h4 class="text-warning mb-2">
+                        <i class="fas fa-city me-2"></i>Major Commercial Projects
+                    </h4>
+                    <p class="text-muted">Infrastructure development across commercial sectors</p>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <!-- WTC -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="client-logo-card">
+                            <div class="client-logo bg-light d-flex align-items-center justify-content-center">
+                                <div class="text-center p-3">
+                                    <i class="fas fa-building fa-3x text-primary mb-2"></i>
+                                    <h5 class="text-dark mb-0">WTC</h5>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h6 class="mb-0">World Trade Center</h6>
+                                <small class="text-muted">2018-2022 Project</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="bg-white p-4 rounded shadow-sm">
+                <div class="row text-center g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item">
+                            <i class="fas fa-home fa-2x text-primary mb-2"></i>
+                            <h4 class="fw-bold text-dark mb-1">20+</h4>
+                            <small class="text-muted">Real Estate Projects</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item">
+                            <i class="fas fa-university fa-2x text-success mb-2"></i>
+                            <h4 class="fw-bold text-dark mb-1">10+</h4>
+                            <small class="text-muted">Educational Institutions</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item">
+                            <i class="fas fa-building fa-2x text-warning mb-2"></i>
+                            <h4 class="fw-bold text-dark mb-1">5+</h4>
+                            <small class="text-muted">Commercial Complexes</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-alt fa-2x text-info mb-2"></i>
+                            <h4 class="fw-bold text-dark mb-1">12+</h4>
+                            <small class="text-muted">Years of Excellence</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+    <!-- Footer Start -->
+    <footer class="footer text-white pt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+
+                <!-- Company Info -->
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="mb-3">Ramjee Concretes Pvt. Ltd</h4>
+                    <p>Where Integrity Strengthens Technology. Bringing strength to every structure with sustainable,
+                        eco-friendly concrete solutions since 2012.</p>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> Projects</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> Clients</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> Products</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Our Products</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="Ready-Mix.html">Ready Mix Concrete</a></li>
+                        <li><a href="Fibre-Concrete.html">Fibre Concrete </a></li>
+                        <li><a href="Stamped-Concrete.html">Stamped Concrete</a></li>
+                        <li><a href="Foam-Concrete.html">Foam Concrete</a></li>
+                        <li><a href="Self-Compact-Concrete.html">Self Compact Concrete(SCC)</a></li>
+                        <li><a href="Fly-ash-Concrete-Bricks.html">Fly ash Concrete Bricks</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <p><i class="fa fa-map-marker-alt me-2"></i> Village Jhanjeri, Landran-Chunni Road, Kharar, Mohali,
+                        Punjab - 140307</p>
+                    <p><i class="fas fa-envelope me-2"></i> ramjee.concrete@gmail.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 9216842711</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 7696042701</p>
+
+                    <!-- Social -->
+                    <div class="d-flex mt-3">
+                        <a href="#" class="btn btn-outline-light btn-social me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom py-3 mt-4">
+            <div class="container text-center">
+                <small>&copy; 2025 <span class="text-primary">Ramjee Concretes Pvt. Ltd.</span> All Rights Reserved. |
+                    Member - Indian Green Building Council</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Navbar scroll effect for better visibility
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
