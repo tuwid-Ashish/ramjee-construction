@@ -130,51 +130,57 @@
         <!-- Contact Form -->
         <div class="col-lg-6">
           <div class="card border-0 shadow p-4">
-            <form>
+            <form action="https://formspree.io/f/xvgwawrn" method="POST">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                     <label for="name">Your Name</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                     <label for="email">Your Email</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone">
                     <label for="phone">Your Phone</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <select class="form-select" id="service" aria-label="Service Type">
-                      <option selected>Select Service</option>
-                      <option value="ready-mix">Ready Mix Concrete</option>
-                      <option value="aggregate">Crushed Aggregate</option>
-                      <option value="sand">Manufactured Sand</option>
-                      <option value="bricks">Fly Ash Bricks</option>
+                    <select class="form-select" id="service" name="service" aria-label="Service Type" required>
+                      <option value="" disabled selected>Select Service</option>
+                      <option value="Ready Mix Concrete">Ready Mix Concrete</option>
+                      <option value="Crushed aggregate">Crushed Aggregate</option>
+                      <option value="Manufactured sand">Manufactured Sand</option>
+                      <option value="Fly-Ash-Bricks">Fly Ash Bricks</option>
                       <option value="other">Other Services</option>
                     </select>
                     <label for="service">Service Required</label>
                   </div>
                 </div>
+
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" id="message" style="height: 150px"
-                      placeholder="Project Details"></textarea>
+                    <textarea class="form-control" id="message" name="message" style="height: 150px"
+                      placeholder="Project Details" required></textarea>
                     <label for="message">Project Details & Requirements</label>
                   </div>
                 </div>
+
                 <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3">Send Message</button>
+                  <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
                 </div>
               </div>
             </form>
+
           </div>
         </div>
 
