@@ -1273,6 +1273,74 @@ footer a:hover {
     font-size: 14px;
 }
 
+/* Zarexa Credit Styling */
+.zarexa-credit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.zarexa-credit i.fa-heart {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.9;
+    }
+}
+
+.zarexa-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(230, 57, 70, 0.1);
+    border-bottom: 1px solid rgba(230, 57, 70, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.zarexa-link:hover {
+    color: var(--bs-secondary) !important;
+    background: rgba(230, 57, 70, 0.2);
+    border-bottom-color: var(--bs-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+.zarexa-link i {
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .zarexa-credit {
+        justify-content: flex-end;
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    
+    .footer-bottom .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 /* === Client Logos Section === */
 #clients h2 {
     font-weight: 700;
